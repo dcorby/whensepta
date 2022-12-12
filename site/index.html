@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body {
+  height: 100%; 
+  padding: 0;
+  margin: 0;
+}
+div#active {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-top: none;
+  z-index: 999;
+  font-size: 28px;
+  font-family: arial, sans-serif;
+  color: #cd2626;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  div#active {
+    bottom: 0 !important;
+  }
+}
+div#map { height: 100%; }
+div#clock {
+  position: fixed;
+  width: 128px;
+  height: 50px;
+  top: 8px;
+  right: 15px;
+  background-color: #eee;
+  z-index: 999;
+  border: 2px solid #ccc;
+}
+div#reload {
+  font-size: 50px;
+  line-height: 50px;
+  width: 50px;
+  height: 46px;
+  display: inline-block;
+  color: darkgreen;
+  border: 2px solid darkgreen;
+  border-radius: 3px;
+}
+div#reload span#spinner {
+  height: 100%;
+  display: inline-block;
+  transform: rotate(75deg);
+  margin-left: 4px;
+}
+div#timer {
+  height: 38px;
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+div.icon {
+  width: 35px;
+  height: 15px;
+  padding: 15px 5px 15px 5px;
+  background: #111f4d;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  line-height: 15px;
+  border-radius: 3px;
+  border: 1px solid #787878;
+}
+div.icon span {
+  vertical-align: top;
+}
+div.icon span.block {
+  display: block;
+  margin-top: -3px;
+}
+div.icon small {
+  font-size: 12px;
+}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+</head>
+
+<body>
+<div id="active"></div>
+<div id="map">
+  <div id="clock">
+    <div id="reload">
+      <span id="spinner" class="">&#x21bb;</span>
+    </div>
+    <div id="timer">
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

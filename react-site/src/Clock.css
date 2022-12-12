@@ -1,0 +1,38 @@
+div#clock {
+  position: fixed;
+  width: 148px;
+  height: 50px;
+  top: 8px;
+  right: 15px;
+  background-color: #eee;
+  z-index: 999;
+  border: 2px solid #ccc;
+}
+div#reload {
+  font-size: 14px;
+  line-height: 50px;
+  width: 70px;
+  height: 46px;
+  display: inline-block;
+  color: #efefef;
+  border: 2px solid darkgreen;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+  background-color: darkgreen;
+}
+div#reload span#button {
+  height: 100%;
+  display: inline-block;
+  margin-left: 4px;
+}
+div#timer {
+  height: 38px;
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+

@@ -1,0 +1,33 @@
+html, body, div#root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+div#map {
+  height: 100%;
+}
+div.icon {
+  width: 35px;
+  height: 15px;
+  padding: 15px 5px 15px 5px;
+  background: #111f4d;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  line-height: 15px;
+  border-radius: 3px;
+  border: 1px solid #787878;
+}
+div.icon span {
+  vertical-align: top;
+}
+div.icon span.block {
+  display: block;
+  margin-top: -3px;
+}
+div.icon small {
+  font-size: 12px;
+}
+
