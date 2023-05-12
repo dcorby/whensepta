@@ -1,1 +1,1 @@
-![alt text](https://github.com/dcorby/when-septa/blob/main/when-septa.png?raw=true)
+![alt text](https://github.com/dcorby/whensepta/blob/main/when-septa.png?raw=true)
